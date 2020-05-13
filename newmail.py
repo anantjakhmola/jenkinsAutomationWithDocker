@@ -1,12 +1,22 @@
-import smtplib
+# Python code to illustrate Sending mail from 
+# your Gmail account 
+import smtplib 
 
-send = "anant.flekdeno@gmail.com"
-rece = "anantjakhmola9@gmail.com"
-passw = "anant1234"
+# creates SMTP session 
+s = smtplib.SMTP('smtp.gmail.com', 587) 
+
+# start TLS for security 
+s.starttls() 
+
+# Authentication 
+s.login("anant.flekdeno@gmail.com", "anant1234") 
+
+# message to be sent 
 message = "BUILD/TEST FAILED"
 
-server = smtplib.SMTP('smtp.gmail.com',587)
-server.starttls()
-server.login = (send,passw)
-server.sendmail = (send,rece,message)
-server.quit()
+# sending the mail 
+s.sendmail("anant.flekdeno@gmail.com", "anantjakhmola9@gmail.com", message) 
+
+# terminating the session 
+s.quit() 
+
