@@ -73,6 +73,8 @@ messages.
 Although I was not able to achieve this Step, but I think a script
 should work fine. Although I will update it as soon as I resolve the
 issue.
+UPDATE: ACHIEVED THIS JOB USING ANOTHER CONTAINER WITH PYTHON INSTALLED 
+![](./myMediaFolder/media/image71.png)
 
 NOTE: You can also use email plugin in Jenkins ,at the time of writing
 this mine was not working somehow.
