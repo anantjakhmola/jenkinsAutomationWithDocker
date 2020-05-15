@@ -9,7 +9,7 @@ s = smtplib.SMTP('smtp.gmail.com', 587)
 s.starttls() 
 
 # Authentication 
-s.login("anant.flekdeno@gmail.com", "anant1234") 
+s.login("anant.flekdeno@gmail.com", "*****") 
 
 # message to be sent 
 message = "BUILD/TEST FAILED"
